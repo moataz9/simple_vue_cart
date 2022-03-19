@@ -63,7 +63,7 @@ app.component("sidebar", {
           </thead>
           <tbody>
             <tr v-for="(quantity, name, i) in cart" :key="i">
-              <td><i :class="icofont-${name} icofont-3x"></i></td>
+              <td><i class="icofont-${name} icofont-3x"></i></td>
               <td>{{ name }}</td>
               <td>\${{ getPrice(name) }}</td>
               <td class="center">{{ quantity }}</td>
